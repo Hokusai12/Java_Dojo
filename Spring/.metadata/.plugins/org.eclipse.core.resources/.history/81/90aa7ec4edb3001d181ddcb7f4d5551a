@@ -1,0 +1,5 @@
+package com.ianhearne.counter.controllers;
+
+public class CounterController {
+
+}

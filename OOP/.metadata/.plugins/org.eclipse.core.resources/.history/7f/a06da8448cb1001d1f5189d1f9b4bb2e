@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+
+public class CoffeeKiosk {
+	private ArrayList<Item> menu;
+	private ArrayList<Order> orders;
+	
+	public CoffeKiosk() {
+		menu = new ArrayList<Item>();
+		orders = new ArrayListOrder>();
+	}
+}

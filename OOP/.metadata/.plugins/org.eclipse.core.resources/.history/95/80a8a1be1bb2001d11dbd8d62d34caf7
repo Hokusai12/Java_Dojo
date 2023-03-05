@@ -1,0 +1,26 @@
+package com.caresoft.clinicapp;
+
+public class Physician extends User implements HIPAACompliantUser {
+
+	//CONSTRUCTORS
+	public Physician(Integer id) {
+		super(id);
+	}
+	
+	//METHODS
+	@Override
+	public boolean assignPin(int pin) {
+		if(pin < 1000 || pin > 9999) {
+			return false;
+		}
+		setPin(pin);
+		return true;
+	}
+
+	@Override
+	public boolean accessAuthorized(Integer confirmedAuthID) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

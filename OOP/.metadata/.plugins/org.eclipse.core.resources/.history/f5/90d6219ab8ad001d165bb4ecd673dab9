@@ -1,0 +1,15 @@
+
+public class TestOrders {
+
+	public static void main(String[] args) {
+		Order order1 = new Order();
+		
+		
+		
+		
+        System.out.printf("Name: %s\n", order1.name);
+        System.out.printf("Total: %s\n", order1.total);
+        System.out.printf("Ready: %s\n", order1.ready);
+	}
+
+}

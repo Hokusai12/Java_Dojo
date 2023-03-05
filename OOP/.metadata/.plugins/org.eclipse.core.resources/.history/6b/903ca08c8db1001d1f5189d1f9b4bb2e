@@ -1,0 +1,11 @@
+
+public class CoffeedoreTest {
+
+	public static void main(String[] args) {
+		CoffeeKiosk coffeedore64 = new CoffeeKiosk();
+		
+		coffeedore64.addMenuItem("banana", 2);
+		coffeedore64.addMenuItem("coffee", 1.5);
+	}
+
+}

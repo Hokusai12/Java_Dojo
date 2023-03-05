@@ -1,0 +1,57 @@
+package com.ianhearne.burgertracker.controllers;
+
+import java.util.List;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+
+import com.ianhearne.burgertracker.models.Burger;
+import com.ianhearne.burgertracker.services.BurgerService;
+
+@Controller
+public class BurgerController {
+	BurgerService service;
+	
+	public BurgerController(BurgerService burgerService) {
+		this.service = burgerService;
+	}
+	
+	@GetMapping("/")
+	public String index(Model model, @ModelAttribute("burger") Burger burger) {
+		List<Burger> burgerList = service.allBurgers();
+		model.addAttribute("burgers", burgerList);
+		return "index.jsp";
+	}
+	
+	@PostMapping("/")
+	public String createBurger(Model model, @Valid @ModelAttribute("burger") Burger burger, BindingResult result) {
+		if(result.hasErrors()) {
+			List<Burger> burgerList = service.allBurgers();
+			model.addAttribute("burgers", burgerList);
+			return "/index.jsp";
+		} else {
+			service.createBurger(burger);
+			return "redirect:/";
+		}
+	}
+	
+	@GetMapping("/burgers/edit/{id}")
+	public String editBurger(@ModelAttribute("burger") Burger burger, @PathVariable("id") Long id, Model model) {
+		Burger burger = service.findBurger(id);
+		model.addAttribute("burger", burger);
+		return "edit.jsp";
+	}
+	
+	@PutMapping("/burgers/{id}")
+	public String saveBurger(@PathVariable("id") Long id, BindingResult result) {
+		
+	}
+}

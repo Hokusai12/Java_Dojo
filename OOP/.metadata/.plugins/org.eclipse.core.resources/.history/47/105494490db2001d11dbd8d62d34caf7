@@ -1,0 +1,7 @@
+
+public class Bat extends Mammal {
+	
+	public Bat() {
+		energy = 300;
+	}
+}

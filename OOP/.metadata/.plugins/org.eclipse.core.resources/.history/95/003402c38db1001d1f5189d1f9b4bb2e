@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+
+public class CoffeeKiosk {
+	private ArrayList<Item> menu;
+	private ArrayList<Order> orders;
+	
+	public CoffeeKiosk() {
+		menu = new ArrayList<Item>();
+		orders = new ArrayList<Order>();
+	}
+	
+	public void addMenuItem(String itemName, double itemPrice) {
+		Item newItem = new Item(itemName, itemPrice);
+		menu.add(newItem);
+		newItem.setIndex(menu.indexOf(newItem));
+	}
+	
+	public void displayMenu() {
+		for(Item menuItem : menu) {
+			System.out.println(String.format("%d %s -- $%.2f", menu.indexOf(menuItem), menuItem.getName(), menuItem.getPrice()));
+		}
+	}
+}

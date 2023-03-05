@@ -1,0 +1,8 @@
+
+public class CoffeedoreTest {
+
+	public static void main(String[] args) {
+		CoffeeKiosk coffeedore64 = new CoffeeKiosk();
+	}
+
+}

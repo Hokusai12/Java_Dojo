@@ -1,0 +1,8 @@
+
+public class Car {
+	private int gas;
+	
+	public void printGas() {
+		System.out.println(gas + " gas left.");
+	}
+}

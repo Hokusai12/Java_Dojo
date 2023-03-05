@@ -1,0 +1,43 @@
+
+public class BankAccount {
+	//ATTRIBUTES
+	private double checkingBalance;
+	private double savingsBalance;
+	private static int numAccounts;
+	private static double balanceOfAllAccounts;
+	
+	//SETTERS AND GETTERS
+	public double getCheckingBalance() {
+		return checkingBalance;
+	}
+	
+	public double getSavingsBalance() {
+		return savingsBalance;
+	}
+	
+	
+	//CONSTRUCTORS
+	public BankAccount() {
+		numAccounts++;
+	}
+	
+	//METHODS
+	public void deposit(String accountType, int amount) { //RELIES ON accountType ARGUMENT TO BE UPPERCASE
+		if(accountType.equals("CHECKING")) {
+			checkingBalance += amount;
+		}
+		else if(accountType.equals("SAVING")) {
+			savingsBalance += amount;
+		}
+	}
+	
+	public double withdraw(int amount) {
+		if(checkingBalance < amount) {
+			return 0.0;
+		}
+		else {
+			checkingBalance -= amount;
+			return amount;
+		}
+	}
+}

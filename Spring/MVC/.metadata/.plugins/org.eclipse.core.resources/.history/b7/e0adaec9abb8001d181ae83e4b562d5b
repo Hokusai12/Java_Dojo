@@ -1,0 +1,5 @@
+package com.ianhearne.mvc.controllers;
+
+public class BookController {
+
+}

@@ -1,0 +1,10 @@
+
+public class TestOrders {
+
+	public static void main(String[] args) {
+		Order order1 = new Order();
+		
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.ianhearne.mvc.models;
+
+public class Book {
+
+}

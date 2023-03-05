@@ -1,0 +1,10 @@
+
+public class HelloWorldTest {
+
+	public static void main(String[] args) {
+		HelloWorld greeter = new HelloWorld();
+		greeter.setGreeting();
+		
+		System.out.println(greeter.getGreeting());
+	}
+}

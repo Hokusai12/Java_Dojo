@@ -1,0 +1,7 @@
+
+public class Driver extends Car {
+	public void drive() {
+		gas -= 1;
+		
+	}
+}

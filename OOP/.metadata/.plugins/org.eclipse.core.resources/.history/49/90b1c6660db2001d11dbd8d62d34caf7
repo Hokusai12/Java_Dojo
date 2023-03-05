@@ -1,0 +1,20 @@
+
+public class ZookeeperTest {
+
+	public static void main(String[] args) {
+		//Gorilla Test
+		Gorilla cutie = new Gorilla();
+		
+		cutie.throwObject();
+		cutie.throwObject();
+		cutie.throwObject();
+		
+		cutie.eatBanana();
+		cutie.eatBanana();
+		
+		cutie.climb();
+		
+		cutie.displayEnergy();
+	}
+
+}

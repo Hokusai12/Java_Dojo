@@ -1,0 +1,14 @@
+package com.ianhearne.burgertracker.services;
+
+import org.springframework.stereotype.Service;
+
+import com.ianhearne.burgertracker.repositories.BurgerRepository;
+
+@Service
+public class BurgerService {
+	private final BurgerRepository burgerRepo;
+
+	public BurgerService(BurgerRepository burgerRepo) {
+		this.burgerRepo = burgerRepo;
+	}
+}

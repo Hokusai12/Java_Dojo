@@ -1,0 +1,22 @@
+
+public class Bat extends Mammal {
+	
+	public Bat() {
+		energy = 300;
+	}
+	
+	public void fly() {
+		energy -= 50;
+		System.out.println("SKREEEEEEEE");
+	}
+	
+	public void eatHuman() {
+		energy += 10;
+		System.out.println("Mmmmm, yummy human");
+	}
+	
+	public void attackTown() {
+		energy -= 5;
+		System.out.println("I really hate these towns");
+	}
+}

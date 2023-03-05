@@ -1,0 +1,17 @@
+INDEX VERSION 1.131
+D:\CodingDojo\Assignments\Java\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2092852241.index
+\helloworld\src\main\java
+D:\CodingDojo\Assignments\Java\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2123133757.index
+\hoppersreceipt\src\main\java
+D:\CodingDojo\Assignments\Java\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2931215155.index
+\helloworldgradle\src\main\java
+D:\CodingDojo\Assignments\Java\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2736206003.index
+\fruityloops\src\main\java
+D:\CodingDojo\Assignments\Java\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4275178400.index
+\counter\src\main\java
+D:\CodingDojo\Assignments\Java\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\840267570.index
+\helloworld\src\main\java
+D:\CodingDojo\Assignments\Java\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2591040081.index
+\daikichi\src\main\java
+D:\CodingDojo\Assignments\Java\Spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4079165221.index
+\helloworld\src\main\java

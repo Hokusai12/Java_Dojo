@@ -1,0 +1,10 @@
+package com.ianhearne.daikichi.controllers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+@RequestMapping("/omikuji")
+public class OmikujiController {
+
+	@GetMapping
+}

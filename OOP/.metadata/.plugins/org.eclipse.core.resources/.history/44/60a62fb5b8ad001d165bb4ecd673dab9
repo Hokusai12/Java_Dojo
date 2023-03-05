@@ -1,0 +1,18 @@
+
+public class TestOrders {
+
+	public static void main(String[] args) {
+		Item item1 = new Item();
+		Item item2 = new Item();
+		Item item3 = new Item();
+		Item item4 = new Item();
+		
+		
+		
+		
+        System.out.printf("Name: %s\n", order1.name);
+        System.out.printf("Total: %s\n", order1.total);
+        System.out.printf("Ready: %s\n", order1.ready);
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DaikichiController.java&apos; to &apos;daikichi/src/main/java/com.ianhearne.daikichi.controllers&apos;&#x0D;&#x0A;- Original project: &apos;daikichi2&apos;&#x0D;&#x0A;- Destination element: &apos;daikichi/src/main/java/com.ianhearne.daikichi.controllers&apos;&#x0D;&#x0A;- Original element: &apos;com.ianhearne.daikichiroutes.controllers.DaikichiController.java&apos;" description="Copy compilation unit" destination="=daikichi/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.ianhearne.daikichi.controllers" element1="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.ianhearne.daikichiroutes.controllers{DaikichiController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1677022492659" units="1" version="1.0"/>
+</session>

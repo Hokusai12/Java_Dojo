@@ -1,0 +1,8 @@
+package com.ianhearne.fruityloops.controllers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class ItemController {
+
+}
