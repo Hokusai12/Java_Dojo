@@ -1,7 +1,0 @@
-package com.ianhearne.burgertracker.models;
-
-@Entity
-@Table(name="burgers")
-public class Burger {
-		
-}

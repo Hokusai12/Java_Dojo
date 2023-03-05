@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;counter/src/main/webapp/WEB-INFG&apos; to &apos;WEB-INF&apos;" description="Rename resource &apos;WEB-INFG&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INFG" name="WEB-INF" stamp="1677206212620" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;counter/src/main/webapp/WEB-INF/index.jsp&apos; to &apos;counter.jsp&apos;" description="Rename resource &apos;index.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/index.jsp" name="counter.jsp" stamp="1677207993172" updateReferences="true"/>
-</session>

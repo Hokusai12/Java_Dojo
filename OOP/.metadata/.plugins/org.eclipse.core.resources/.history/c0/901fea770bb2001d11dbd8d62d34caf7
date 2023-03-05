@@ -1,8 +1,0 @@
-
-public class Car {
-	protected int gas = 10;
-	
-	public void printGas() {
-		System.out.println(gas + "/10 gas left.");
-	}
-}

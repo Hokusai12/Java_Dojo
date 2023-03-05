@@ -1,8 +1,0 @@
-
-public class Driver extends Car {
-	public void drive() {
-		gas -= 1;
-		System.out.println("Went for a drive.");
-		printGas();
-	}
-}

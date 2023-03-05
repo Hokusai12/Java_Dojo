@@ -1,5 +1,0 @@
-package com.ianhearne.mvc.respositories;
-
-public interface BookRepository {
-
-}

@@ -1,5 +1,0 @@
-package com.ianhearne.burgertracker.repositories;
-
-public interface BurgerRepository {
-
-}
