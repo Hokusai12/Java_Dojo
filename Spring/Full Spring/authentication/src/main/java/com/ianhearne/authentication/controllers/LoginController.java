@@ -1,7 +1,5 @@
 package com.ianhearne.authentication.controllers;
 
-import java.util.Enumeration;
-
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
@@ -12,14 +10,12 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import com.ianhearne.authentication.models.LoginUser;
 import com.ianhearne.authentication.models.User;
 import com.ianhearne.authentication.services.UserService;
 
 @Controller
-public class HomeController {
+public class LoginController {
 	@Autowired
 	UserService userService;
 	
@@ -48,7 +44,7 @@ public class HomeController {
 				return "/login.jsp";
 			}
 			session.setAttribute("userId", registeredUser.getId());
-			return "redirect:/welcome";
+			return "redirect:/books";
 		}
 	}
 	
@@ -70,19 +66,10 @@ public class HomeController {
 				return "/login.jsp";
 			}
 			session.setAttribute("userId", currentUser.getId());
-			return "redirect:/welcome";
+			return "redirect:/books";
 		}
 	}
 	
-	@GetMapping("/welcome")
-	public String welcome(Model model, HttpSession session) {
-		if(session.getAttribute("userId") == null) {
-			return "redirect:/";
-		}
-		Long userId = Long.parseLong(session.getAttribute("userId").toString());
-		model.addAttribute("user", userService.findById(userId));
-		return "welcome.jsp";
-	}
 	
 	@GetMapping("/logout")
 	public String logout(HttpSession session) {

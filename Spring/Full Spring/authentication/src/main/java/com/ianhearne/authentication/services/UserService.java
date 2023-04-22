@@ -1,5 +1,7 @@
 package com.ianhearne.authentication.services;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.mindrot.jbcrypt.BCrypt;
@@ -7,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
 
+import com.ianhearne.authentication.models.Book;
 import com.ianhearne.authentication.models.LoginUser;
 import com.ianhearne.authentication.models.User;
 import com.ianhearne.authentication.repositories.UserRepository;
@@ -62,5 +65,17 @@ public class UserService {
 			return optionalUser.get();
 		}
 		return null;
+	}
+	
+	public List<Book> getBooksBorrowedFromUser(User user) {//Returns a list of all unborrowed books as well as books borrowed from the user
+		List<Book> postedBooks = user.getBooksPosted();
+		List<Book> borrowedBooks = new ArrayList<Book>();
+		
+		for(Book book : postedBooks) {
+			if(book.getBorrower() != null) {
+				borrowedBooks.add(book);
+			}
+		}
+		return borrowedBooks;
 	}
 }
